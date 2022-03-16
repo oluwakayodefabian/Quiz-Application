@@ -1,0 +1,53 @@
+[
+    {
+        "question" : "Inside which HTML element do we write javascript code ?",
+        "choices" : [
+            "<script> tag",
+            "<js> tag",
+            "<javascript> tag",
+            "<head> tag"
+        ],
+       
+        "answer" : 1
+    },
+     {
+        "question" : "What is the correct syntax for referring to an external script called app.js ?",
+       "choices" : [
+        "<script href='app.js'>",
+         "<script src='app.js'>",
+         "<script file='app.js'>",
+         "<script name='app.js'>"
+       ],
+        "answer" : 2
+    },
+     {
+        "question" : "How do we write 'Hello World' in an alert box ?",
+        "choices" :[
+             "msgBox('Hello World')",
+            "console.log('Hello World')",
+            "alert('Hello World')",
+            "msg('Hello World')"
+        ],
+        "answer" : 3
+    },
+     {
+        "question" : "What is javascript ?",
+        "choices" : [
+             "it is a server-side scripting language",
+            "it is a client-side scripting language",
+            "it is a scripting language",
+            "it is not a client-side scripting language"
+        ],
+        "answer" : 2
+    },
+    {
+        "question" : "JavaScript is a scripting language",
+        "choices" : [
+            "I don't Know",
+            "False",
+            "True",
+            "Not sure"
+        ],
+        "answer" : 3
+    }
+]

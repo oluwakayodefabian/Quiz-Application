@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kay Quiz</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+  <!-- popUp box -->
+  <div class="popUpBox" id="hideBox">
+    <h3>Some Rules for the quiz</h3>
+    <ol>
+      <li>You will only have <span>10 Minutes</span> for the entire quiz</li>
+      <li>Once you select your answer, you are redirected to the next question</li>
+      <li>you can't exit from the quiz while you are playing</li>
+      <li>You will get points/bonuses on the basis of your correct answers.</li>
+    </ol>
+    <div class="btn-container">
+      <a href="./index.html" class="btn btn-outline">exit quiz</a>
+      <button class="btn" id="startPlaying">start playing</button>
+    </div>
+  </div>
+  <!-- // popUp box -->
+
+    <!-- loader -->
+    <div id="loader hide"></div>
+    <!-- // loader -->
+    <div class="questions-container" id="questions-container">
+      <!-- head's up display -->
+        <div class="timer-container" id="timerContainer">
+          <span class="timer-text">Timer:</span>
+          <span class="time-remaining" id="timer"></span>
+        </div>
+        <div id="hud">
+          <div id="hud-item">
+            <h3 class="hud-prefix">Questions</h3>
+            <h3 class="hud-main-text" id="questionCounter"><!-- question counter dynamically added using JS --></h3>
+          </div>
+          <div id="hud-item">
+            <h3 class="hud-prefix">Score</h3>
+            <h3 class="hud-main-text" id="score"><!-- score dynamically added using JS --></h3>
+          </div>
+        </div>
+        <!-- // head's up display -->
+
+        <!-- progress-bar -->
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <!-- // progress-bar -->
+
+        <div id="game" class="flex-column">
+          <p class="question" id="question">Who is designing this Quiz App?</p>
+          <!-- choices -->
+          <p></p>
+          <div class="choice-wrapper">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text" data-number="1">John Doe</p>
+          </div>
+          <div class="choice-wrapper">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text" data-number="2">John Doe</p>
+          </div>
+          <div class="choice-wrapper">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text" data-number="3">John Doe</p>
+          </div>
+          <div class="choice-wrapper">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text" data-number="4">John Doe</p>
+          </div>
+          <!-- // choices -->
+        </div>
+    </div>
+    <!-- End of question container -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; | Designed and developed by oluwakayode fabian </p>
+    </footer>
+</body>
+
+</html>
